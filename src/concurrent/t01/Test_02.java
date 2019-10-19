@@ -10,6 +10,7 @@ import java.util.concurrent.TimeUnit;
 public class Test_02 {
 	private static int staticCount = 0;
 	
+	//锁的是当前类型的类对象。在本代码中就是Test_02.class
 	public static synchronized void testSync4(){
 		System.out.println(Thread.currentThread().getName() 
 				+ " staticCount = " + staticCount++);
@@ -21,6 +22,7 @@ public class Test_02 {
 		}
 	}
 	
+	//锁的是当前类型的类对象。在本代码中就是Test_02.class
 	public static void testSync5(){
 		synchronized(Test_02.class){
 			System.out.println(Thread.currentThread().getName() 

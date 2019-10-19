@@ -2,7 +2,7 @@
  * volatile关键字
  * volatile的非原子性问题
  * volatile， 只能保证可见性，不能保证原子性。
- * 不是枷锁问题，只是内存数据可见。
+ * 不是加锁问题，只是内存数据可见。
  */
 package concurrent.t01;
 
